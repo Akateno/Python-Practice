@@ -18,7 +18,7 @@ operations = {
 }
 
 def calculator():
-  print(logo)
+  
 
   num1 = float(input("What's the first number?: "))
   for symbol in operations:
