@@ -74,7 +74,5 @@ while not is_game_over:
     
     print(compare(user_score,computer_score))
 
-    print("////////////////////////")
-    print(f"your final hand: {user_cards}, final score: {user_score}")
-    print(f"Opponents hand: {computer_cards} final score: {computer_score}")
+ 
 
