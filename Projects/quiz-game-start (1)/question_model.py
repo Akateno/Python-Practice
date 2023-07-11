@@ -3,5 +3,3 @@ class Question():
         self.text=text
         self.answer=answer
 
-new_q=Question("How old?", 5)
-print(new_q.text)

@@ -1,4 +1,4 @@
-from replit import clear
+# from replit import clear
 
 #HINT: You can call clear() to clear the output in the console.
 
@@ -25,4 +25,4 @@ while not bidding_finished:
     bidding_finished=True
     find_highest_bidder(bids)
   elif should_continue == "yes":
-    clear()
+    print('yes')
