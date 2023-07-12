@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 # from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+import time 
 
 
 chrome_driver_path=Service("/Users/erickvargas/Development/chrome_driver/chromedriver")
@@ -33,11 +34,18 @@ first_name.send_keys("Tony")
 
 last_name=driver.find_element(By.NAME, "lName")
 last_name.send_keys("Bolony")
-
+timeout=time.time()+5
 email=driver.find_element(By.NAME, "email")
 email.send_keys("tonybalony@gmail.com")
 
+
 sign_up=driver.find_element(By.TAG_NAME, "button")
 sign_up.click()
+
+
+
+five_min=time.time()+60*5
+
+
 
 driver.quit()
