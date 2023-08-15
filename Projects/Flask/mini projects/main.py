@@ -59,3 +59,22 @@ def create_blog_post(user):
 
 new_user=User("Erick")
 new_user.is_logged_in=True 
+create_blog_post(new_user)
+
+
+# Create the logging_decorator() function 👇
+
+def logging_decorator(fn):
+    def wrapper(*args,**kwargs):
+        print(f"you called {fn.__name__}{args} ")
+        result=fn(args[0],args[1], args[2])
+        print(f"the answer for this is {result}")
+    return wrapper
+
+    
+# Use the decorator 👇
+@logging_decorator
+def test_func(a,b,c):
+    return a*b*c
+
+test_func(1,2,3)
